@@ -8,8 +8,8 @@ import (
 
 func main() {
 	// 双链接
-	huobi := public.GetPublicWSClient(constant.HUOBI, public.WithChannel(true)).(*public.HuobiPublicClient)
-	huobi2 := public.GetPublicWSClient(constant.HUOBI, public.WithChannel(true)).(*public.HuobiPublicClient)
+	huobi := public.GetPublicWSClient(constant.HUOBI, public.WithChannel(true)).(*public.OKExPublicClient)
+	huobi2 := public.GetPublicWSClient(constant.HUOBI, public.WithChannel(true)).(*public.OKExPublicClient)
 	huobi.Start()
 	huobi2.Start()
 	symbols := []string{"btcusdt", "ethusdt", "trxusdt", "eosusdt", "filusd", "filusdt", "xrpusdt", "bchusdt", "ltcusdt", "htusdt", "ethbtc", "trxbtc", "htbtc", "eosbtc", "hteth", "usdthusd", "ltcbtc", "bchbtc", "xrpbtc", "topbtc", "eoseth", "trxeth", "etcbtc", "topht", "hptht", "eosht", "bchht", "xtzusdt", "okbusdt", "adausdt", "linkusdt", "xmrusdt", "xlmusdt", "leousdt", "etcusdt", "dashusdt", "neousdt", "crousdt", "atomusdt", "iotausdt", "zecusdt", "xemusdt", "ontusdt", "vetusdt", "batusdt", "dogeusdt", "algousdt", "qtumusdt", "dcrusdt"}
